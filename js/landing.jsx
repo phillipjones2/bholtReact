@@ -1,6 +1,6 @@
-var React = require('react')
+const React = require('react')
 
-var Landing = () => (
+const Landing = () => (
   <div className='app-container'>
     <div className='home-info'>
       <h1 className='title'>svideo</h1>
@@ -10,4 +10,4 @@ var Landing = () => (
   </div>
 )
 
-modules.exports = Landing
+module.exports = Landing

@@ -8,6 +8,9 @@ const Search = React.createClass({
       searchTerm: ''
     }
   },
+  randomFunction () {
+    console.log('lol')
+  },
   handleSearchTermEvent (event) {
     this.setState({ searchTerm: event.target.value })
   },

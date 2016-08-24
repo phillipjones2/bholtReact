@@ -15,7 +15,7 @@ describe('<Search />', () => {
 
   it('should render as many shows as there are data', () => {
     const wrapper = shallow(<Search />)
-    console.log(wrapper.debug())
+    // console.log(wrapper.debug())
     expect(wrapper.find(ShowCard).length).to.equal(shows.length)
   })
 

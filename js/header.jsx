@@ -1,17 +1,18 @@
 const React = require('react')
 const { Link } = require('react-router')
 const { func, bool, string } = React.PropTypes
+const { connector } = require('./store')
 
 const Header = React.createClass({
 
   propTypes: {
-    handleSearchTermChange: func,
+    setSearchTerm: func,
     handleSearchTermEvent: func,
     showSearch: bool,
     searchTerm: string
   },
   handleSearchTermEvent (e) {
-    this.props.handleSearchTermChange(e.target.value)
+    this.props.setSearchTerm(e.target.value)
   },
   render () {
     let utilSpace
@@ -46,4 +47,4 @@ const Header = React.createClass({
   }
 })
 
-module.exports = Header
+module.exports = connector(Header)
